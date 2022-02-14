@@ -1,0 +1,17 @@
+conection string:
+protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Data Source=(local);Initial Catalog=FlutterDB;Integrated Security=true;User ID=sa;Password=12345");
+            base.OnConfiguring(optionsBuilder);
+        }
+
+
+pakege need:
+1_Microsoft.EntityFramworkCore = Install-Package Microsoft.EntityFrameworkCore -Version 6.0.1
+2_Microsoft.EntityFramworkCore.Design = Install-Package Microsoft.EntityFrameworkCore.Design -Version 6.0.1
+3_Microsoft.EntityFramworkCore.Relation = Install-Package Microsoft.EntityFrameworkCore.Relational -Version 6.0.1
+4_Microsoft.EntityFramworkCore.SqlServer = Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 6.0.1
+5_Microsoft.EntityFramworkCore.Tools = Install-Package Microsoft.EntityFrameworkCore.Tools -Version 6.0.1
+6_System.Configuration.ConfigurationManager = Install-Package System.Configuration.ConfigurationManager -Version 6.0.2-mauipre.1.22054.8
+
+for find pakege serch Entity in www.nuget.org
